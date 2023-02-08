@@ -84,16 +84,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -192,6 +183,10 @@ section {
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
+.header-content .right-header .careers {
+  font-size: 2rem;
+  color: var(--color-grey-2);
+}
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
@@ -266,7 +261,7 @@ section {
 }
 .about-stats .progress-bars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 .about-stats .progress-bars .progress-bar {
@@ -300,11 +295,14 @@ section {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .html {
-  width: 70%;
+.about-stats .progress-bars .progress-bar .progress-container .progress .portuguese {
+  width: 45%;
 }
-.about-stats .progress-bars .progress-bar .progress-container .progress .js {
-  width: 50%;
+.about-stats .progress-bars .progress-bar .progress-container .progress .english {
+  width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-container .progress .spanish {
+  width: 100%;
 }
 
 .stats-title {

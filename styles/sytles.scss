@@ -177,8 +177,13 @@ section{
             span{
                 color: var(--color-secondary);
 
-            };
+            }
+
         }
+        .careers{
+            font-size: 2rem;
+            color: var(--color-grey-2);
+        }  
         p{
             margin: 1.5rem 0;
             line-height: 2rem;
@@ -253,7 +258,7 @@ section{
     padding-bottom: 4rem;
     .progress-bars{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         .progress-bar{
             display: flex;
@@ -283,11 +288,14 @@ section{
                         background-color: var(--color-secondary);
                         transition: all .4s ease-in-out;
                     }
-                    .html{
-                        width: 70%;
+                    .portuguese{
+                        width: 45%;
                     }
-                    .js{
-                        width: 50%;
+                    .english{
+                        width: 85%;
+                    }
+                    .spanish{
+                        width: 100%;
                     }
                 
                 }
